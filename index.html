@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pace Calculator</title>
+  <link rel="stylesheet" href="resets.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Running Calculators</h1>
+  <div class="content">
+    <div class="contentBox">
+      <h2>Enter Your Time</h2>
+      <label for="hours">Hours&colon;</label>
+      <input type="text" name="hours" id="hours">
+      <label for="minutes">Minutes&colon;</label> 
+      <input type="text" name="minutes" id="minutes">
+      <label for="seconds">Seconds&colon;</label>
+      <input type="text" name="seconds" id="seconds">
+      <h2>Enter Your Distance</h2>
+      <label for="distance">Kilometers&colon;</label>
+      <input type="text" name="distance" id="distance">
+      <button type="submit" onclick="calculate()">Calculate</button>
+      <p id="result"></p>
+    </div>
+    <div class="contentBox">
+      <h2>Results</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Distance</th>
+            <th colspan="2">Paces</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody id="paceTable">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="application/javascript" src="calculator.js"></script>
+</body>
+</html>

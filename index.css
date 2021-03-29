@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+  color: #fff;
+  font: 1em sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contentBox {
+  margin: 1em;
+  padding: 1em;
+  min-width: 30%;
+  background-color: #1a73af6b;
+  color: #fff;
+  border: .05em solid #fff;
+  border-radius: 1em;
+  box-shadow: .1em .1em .5em #fff,
+  inset 0 -3em 3em rgba(0,0,0,0.1);
+
+}
+
+.contentBox > * {
+  padding: .25em 0;
+  display: flex;
+  flex: 1;
+}
+
+.contentBox > table {
+  flex-direction: column;
+}
+
+.contentBox > h2 {
+  justify-content: center;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+.contentBox > button {
+  background-color: #1a74af;
+  margin: 1em 0;
+  padding: .5em 1em;
+  width: 100%;
+  justify-content: space-around;
+  border: 0;
+  border-radius: .75em;
+  outline: none;
+  box-shadow: .1em .1em .1em #000;
+}
+
+.contentBox > button:focus {
+  box-shadow: 
+    .1em .1em .1em #000,
+    inset 0 -.1em 1em #fff;
+}
+
+.contentBox > input {
+  padding: .5em;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: .75em;
+  text-align: right;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.contentBox > input:focus {
+  box-shadow: 0em 0em .2em #000;
+  border-radius: .75em;
+}
+
+table {
+  display: flex;
+}
+
+thead {
+  flex: 1;
+  width: 100%;
+}
+
+th, tr, td {
+  width: 100%;
+}
+
+th, td {
+  flex: 3;
+  border: 1px solid #fff;
+  /* justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  align-content: center;
+  align-self: center;
+  align-items: center; */
+}
